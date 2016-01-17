@@ -1,0 +1,99 @@
+body {
+  background: white;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.box {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  font-weight: bold;
+  margin: 30px;
+  padding: 30px 0 0;
+  color: white;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.box[class*="color"] {
+  transition: color 1.2s, border-color 1.2s;
+}
+
+.box.color1 {
+  color: #ff007c;
+  border-color: #ff007c;
+}
+
+.box.color2 {
+  color: #0000ff;
+  border-color: #0000ff;
+}
+
+.box.color3 {
+  color: #ff3300;
+  border-color: #ff3300;
+}
+
+.box.color4 {
+  color: #00cc00;
+  border-color: #00cc00;
+}
+
+.box.color5 {
+  color: #d71662;
+  border-color: #d71662;
+}
+
+.box.color6 {
+  color: #7e6a56;
+  border-color: #7e6a56;
+}
+
+.box.color7 {
+  color: #a3871b;
+  border-color: #a3871b;
+}
+
+.box.color8 {
+  color: #159bb4;
+  border-color: #159bb4;
+}
+
+.box.color9 {
+  color: #4f474f;
+  border-color: #4f474f;
+}
+
+.box.color10 {
+  color: #9ba198;
+  border-color: #9ba198;
+}
+
+.box.color11 {
+  color: #f7c208;
+  border-color: #f7c208;
+}
+
+.box.color12 {
+  color: #35e4de;
+  border-color: #35e4de;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0 30px 30px;
+  line-height: 1;
+}
+
+p {
+  font-size: 30px;
+  margin: 0 30px 30px;
+}

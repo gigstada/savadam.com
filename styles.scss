@@ -1,0 +1,56 @@
+$colors: #ff007c #0000ff #ff3300 #00cc00 #d71662 #7e6a56 #a3871b #159bb4 #4f474f #9ba198 #f7c208 #35e4de;
+$base-color: white;
+$base-spacing: 30px;
+$transition-speed: 1s;
+
+body {
+    background: white;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    height: 100vh;
+}
+
+.box {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-weight: bold;
+    
+    margin: $base-spacing;
+    padding: $base-spacing 0 0;
+
+    color: $base-color;
+    border: 10px solid $base-color;
+    border-radius: 10px;
+    
+    &[class*="color"] {
+        transition: color $transition-speed, border-color $transition-speed;
+    }
+    
+    @each $current-color in $colors {
+        $i: index($colors, $current-color);
+        
+        &.color#{$i} { 
+            color: $current-color;
+            border-color: $current-color;
+        }
+    }
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 $base-spacing $base-spacing;
+    line-height: 1;
+}
+
+p {
+    font-size: 30px;
+    margin: 0 $base-spacing $base-spacing;
+}
